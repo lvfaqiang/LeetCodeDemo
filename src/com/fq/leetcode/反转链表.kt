@@ -9,17 +9,10 @@ package com.fq.leetcode
  */
 fun main(args: Array<String>) {
     val solution = Solution()
-    val node = solution.reverseList(ListNode(1).apply {
-        next = ListNode(2).apply {
-            next = ListNode(3).apply {
-                next = ListNode(4).apply {
-                    next = ListNode(5).apply {
-                        next = ListNode(6)
-                    }
-                }
-            }
-        }
-    })
+
+    val headNode = generateSingleChain(6)
+
+    val node = solution.reverseList(headNode)
 
 
     printNode(node)
@@ -64,8 +57,4 @@ class Solution {
         return prev
     }
 
-}
-
-class ListNode(var `val`: Int = 0) {
-    var next: ListNode? = null
 }
