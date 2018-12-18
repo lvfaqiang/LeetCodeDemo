@@ -9,6 +9,16 @@
 参数为一个链表头。
 ```
 
+[两两交换链表中的节点](https://github.com/lvfaqiang/LeetCodeDemo/blob/master/src/com/fq/leetcode/SwapNodesInPairs.kt)
+```
+eg : 1->2->3->4,
+result ：2->1->4->3
+
+如果链表节点为单数 ，则最后一个不进行交换
+eg : 1->2->3->4->5,
+result ：2->1->4->3->5
+```
+
 [判环链表](https://github.com/lvfaqiang/LeetCodeDemo/blob/master/src/com/fq/leetcode/HasCycle.kt)
 ```
 判断一个链表是否有环（也就是重复节点）
